@@ -18,7 +18,7 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		first_version[i] = mx - first_version[i];
 	}
-	// also, create second version wherein the first version's maximum is subtracted in the elements
+	// also, create a second version wherein the first version's maximum is subtracted in the elements
 	long long first_version_mx = *max_element(first_version.begin(), first_version.end());
 	vector<long long> second_version = first_version;
 	for (int i = 0; i < n; i++) {
